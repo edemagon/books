@@ -1,0 +1,26 @@
+@import "colors";
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+  color: @color-gray-darkest;
+}
+.btn {
+  padding: 6px 12px;
+  color: @color-gray-dark;
+  margin: 0.5em;
+}
+.btn--positive {
+  background-color: @color-highlight;
+  &:focus {
+
+  }
+}
+.btn--action {
+  border: 0.1em solid @color-highlight;
+}

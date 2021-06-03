@@ -1,0 +1,23 @@
+<li class="list-group-item d-flex flex-row justify-content-between">
+  <div class="ms-2 d-inline-flex justify-content-start">
+    <div class="list-group-item__img">
+      <img class="" [src]="book.image" [alt]="book.title">
+    </div>
+    <div class="ms-2">
+      <div class="list-group-item__title">
+        <a [routerLink]="[id]">
+          <h4>{{book.title}}</h4>
+        </a>
+      </div>
+      <div class="list-group-item__detail">
+        <p>Author: {{book.author}}</p>
+        <p>Category: {{book.category}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="ms-2 d-flex flex-row justify-content-center">
+    <span class="vote">{{book.votes}} votes</span>
+    <button class="votes btn btn--positive h-50"  [hidden]="alreadyVoted" (click)="onVote()">Vote</button>
+    <button class="votes btn btn--positive disabled h-50"  [hidden]="!alreadyVoted" [ngClass]="{'alreadyVoted': alreadyVoted}">Voted</button>
+  </div>
+</li>

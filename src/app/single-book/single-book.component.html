@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row title">
+    <div class="col-xs-12">
+      <h2> {{book.title}}</h2>
+      <h6> {{book.author}}</h6>
+    </div>
+  </div>
+  <div class="row detail">
+    <div class="col-4">
+      <img [src]="book.image">
+    </div>
+    <div class="col-8">
+      <p> <fa-icon [icon]="getIcon()" size="lg"></fa-icon> {{book.category}}</p>
+      <p>Already <span class="detail--highlight">{{book.votes}}</span> people voted for this book. It's the <span class="detail--highlight">{{book.rank}}</span> top voted book</p>
+      <p>View full description on our partner website <a [href]="book.url"> goodReads </a></p>
+    </div>
+  </div>
+</div>
+<!--<input type="text" class="form-control" [(ngModel)]="comment" placeholder="commentaire">-->
