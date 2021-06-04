@@ -31,3 +31,17 @@ The main project is a very basic Angular application. We will verify the followi
 * The list should be sortable by title and number of votes, ascending and descending
 * The UI/UX should be consistent and coherent
 * Use sample data from `src/assets/books.json`
+
+## Aplication description 
+Components: 
+- book-view contains the list of books, the page title
+- book is rendering an item of the list with book details
+- book navigates to single-book on click, single-book shows the details of a book.
+- header contains the navigation bar
+- foooter is a basic footer
+- random component is created with the only purpose of having a second view in the application
+- four-o-four is a basic 404 page
+
+navigation between components is done using the routing module (single page application).
+
+The book services loads the books from the assets and creates a subject for delivering the books to the components
