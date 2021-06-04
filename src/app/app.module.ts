@@ -14,17 +14,20 @@ import {FaIconLibrary, FontAwesomeModule} from '@fortawesome/angular-fontawesome
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {
+  faBookReader,
   faDragon,
   faGhost,
   faGlobe,
   faGrimace,
   faGrinHearts,
   faGrinTears, faTheaterMasks,
-  faUtensils
+  faUtensils,
 } from '@fortawesome/free-solid-svg-icons';
+import { RandomComponent } from './random/random.component';
 
 const appRoutes: Routes = [
   { path: 'books', component: BookViewComponent },
+  { path: 'random', component: RandomComponent },
   { path: 'books/:id', component: SingleBookComponent },
   { path: '', component: BookViewComponent },
   { path: 'not-found', component: ForOFourComponent },
@@ -38,7 +41,8 @@ const appRoutes: Routes = [
     SingleBookComponent,
     BookComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    RandomComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +59,7 @@ const appRoutes: Routes = [
 export class AppModule {
   constructor(library: FaIconLibrary) {
     library.addIcons(faGrimace);
+    library.addIcons(faBookReader);
     library.addIcons(faUtensils);
     library.addIcons(faGlobe);
     library.addIcons(faDragon);

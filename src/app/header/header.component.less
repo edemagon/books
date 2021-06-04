@@ -1,8 +1,23 @@
-//@import "colors";
+@import "../../styles/colors.less";
 
 .navbar {
   margin-bottom: 2em;
-}
-.navBar__li-active {
-  text-decoration: underline;
+  fa-icon {
+    color: @color-light;
+    stroke: #334B49;
+  }
+  span {
+    margin-left: 0.5em;
+    margin-right: 1.3em;
+    font-family: "Bookman Old Style";
+    font-style: italic;
+    font-size: 1.2em;
+  }
+  .navBar__li {
+    font-size: 1.1em;
+    text-transform: uppercase;
+  }
+  .navBar__li-active {
+    font-weight: bold;
+  }
 }
