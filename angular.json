@@ -98,7 +98,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles/styles.less",
+              "src/styles/colors.less"
             ],
             "scripts": []
           }
